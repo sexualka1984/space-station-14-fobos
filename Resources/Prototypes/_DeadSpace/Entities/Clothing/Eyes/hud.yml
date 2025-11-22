@@ -25,9 +25,9 @@
 
 - type: entity
   parent: [ClothingEyesBase, ShowMedicalIcons]
-  id: ClothingEyesHudMedSecAdvanced
-  name: продвинутый мед-охранный визор
-  description: Модернизированный мед-охранный визор, обеспечивающий защиту от вспышек и отображающий информацию о здоровье гуманоида и его статусе ID-карты.
+  id: ClothingEyesHudMedCommand
+  name: мед-административный визор
+  description: Мед-административный визор, обеспечивающий защиту от вспышек, отображающий информацию о здоровье гуманоида и его статусе ID-карты.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/medsec.rsi
@@ -61,3 +61,6 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: Construction
+    graph: HudMedCom
+    node: medcomHud
